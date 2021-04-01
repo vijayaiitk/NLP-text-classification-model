@@ -46,6 +46,7 @@ Simple text cleaning processes: Some of the common text cleaning process involve
 
 
 **Step 4: Extracting vectors from text (Vectorization)**
+
 It’s difficult to work with text data while building Machine learning models since these models need well-defined numerical data. The process to convert text data into numerical data/vector, is called vectorization or in the NLP world, word embedding. Bag-of-Words(BoW) and Word Embedding (with Word2Vec) are two well-known methods for converting text data to numerical data.
 There are a few versions of Bag of Words, corresponding to different words scoring methods. We use the Sklearn library to calculate the BoW numerical values using these approaches:
 1. Count vectors: It builds a vocabulary from a corpus of documents and counts how many times the words appear in each document
@@ -56,6 +57,7 @@ Word2Vec: One of the major drawbacks of using Bag-of-words techniques is that it
 We can use any of these approaches to convert our text data to numerical form which will be used to build the classification model. With this in mind, I am going to first partition the dataset into training set (80%) and test set (20%)
 
 **Step 5. Running ML algorithms**
+
 It’s time to train a machine learning model on the vectorized dataset and test it. Now that we have converted the text data to numerical data, we can run ML models on X_train_vector_tfidf & y_train. We’ll test this model on X_test_vectors_tfidf to get y_predict and further evaluate the performance of the model
 1. Logistic Regression
 2. Naive Bayes: It’s a probabilistic classifier that makes use of Bayes’ Theorem, a rule that uses probability to make predictions based on prior knowledge of conditions that might be related
