@@ -18,7 +18,7 @@ Text classification is one of the important task in supervised machine learning 
 **Step 2: Loading the data set & EDA**
 The data set that we will be using for this article is the famous “Natural Language Processing with Disaster Tweets” data set where we’ll be predicting whether a given tweet is about a real disaster (target=1) or not (target=0)
 In this competition, you’re challenged to build a machine learning model that predicts which Tweets are about real disasters and which ones aren’t. You’ll have access to a dataset of 10,000 tweets that were hand classified.
-We have 7,613 tweets in training (labelled) dataset and 3,263 in the test(unlabelled) dataset. Here’s a snapshot of the training/labelled dataset which we’ll use for building our model
+We have 7,613 tweets in training (labelled) dataset and 3,263 in the test(unlabelled) dataset
 
 Exploratory Data Analysis (EDA)
 1. Class distribution: There are more tweets with class 0 ( no disaster) than class 1 ( disaster tweets). We can say that the dataset is relatively balanced with 4342 non-disaster tweets (57%) and 3271 disaster tweets (43%). Since the data is balanced, we won’t be applying data-balancing techniques like SMOTE while building the model
@@ -59,6 +59,6 @@ It’s time to train a machine learning model on the vectorized dataset and test
 2. Naive Bayes: It’s a probabilistic classifier that makes use of Bayes’ Theorem, a rule that uses probability to make predictions based on prior knowledge of conditions that might be related
 
 In this article, I demonstrated the basics of building a text classification model comparing Bag-of-Words (with Tf-Idf) and Word Embedding with Word2Vec. You can further enhance the performance of your model using this code by
-using other classification algorithms like Support Vector Machines (SVM), XgBoost, Ensemble models, Neural networks etc.
-using Gridsearch to tune the hyperparameters of your model
-using advanced word-embedding methods like GloVe and BERT
+1. using other classification algorithms like Support Vector Machines (SVM), XgBoost, Ensemble models, Neural networks etc.
+2. using Gridsearch to tune the hyperparameters of your model
+3. using advanced word-embedding methods like GloVe and BERT
