@@ -16,6 +16,7 @@ Text classification is one of the important task in supervised machine learning 
 
 
 **Step 2: Loading the data set & EDA**
+
 The data set that we will be using for this article is the famous “Natural Language Processing with Disaster Tweets” data set where we’ll be predicting whether a given tweet is about a real disaster (target=1) or not (target=0)
 In this competition, you’re challenged to build a machine learning model that predicts which Tweets are about real disasters and which ones aren’t. You’ll have access to a dataset of 10,000 tweets that were hand classified.
 We have 7,613 tweets in training (labelled) dataset and 3,263 in the test(unlabelled) dataset
@@ -32,15 +33,16 @@ The average number of words in a disaster tweet is 15.17 as compared to an avera
 The average characters in a disaster tweet is 108.1 as compared to an average of 95.7 characters in a non-disaster tweet
 
 **Step 3: Text Pre-Processing**
+
 Before we move to model building, we need to preprocess our dataset by removing punctuations & special characters, cleaning texts, removing stop words, and applying lemmatization
 Simple text cleaning processes: Some of the common text cleaning process involves:
-1. Removing punctuations, special characters, URLs & hashtags
-2. Removing leading, trailing & extra white spaces/tabs
-3. Typos, slangs are corrected, abbreviations are written in their long forms
+- Removing punctuations, special characters, URLs & hashtags
+- Removing leading, trailing & extra white spaces/tabs
+- Typos, slangs are corrected, abbreviations are written in their long forms
 
-- Stop-word removal: We can remove a list of generic stop words from the English vocabulary using nltk. A few such words are ‘i’,’you’,’a’,’the’,’he’,’which’ etc.
-- Stemming: Refers to the process of slicing the end or the beginning of words with the intention of removing affixes(prefix/suffix)
-- Lemmatization: It is the process of reducing the word to its base form
+1. Stop-word removal: We can remove a list of generic stop words from the English vocabulary using nltk. A few such words are ‘i’,’you’,’a’,’the’,’he’,’which’ etc.
+2. Stemming: Refers to the process of slicing the end or the beginning of words with the intention of removing affixes(prefix/suffix)
+3. Lemmatization: It is the process of reducing the word to its base form
 
 
 **Step 4: Extracting vectors from text (Vectorization)**
@@ -59,6 +61,6 @@ It’s time to train a machine learning model on the vectorized dataset and test
 2. Naive Bayes: It’s a probabilistic classifier that makes use of Bayes’ Theorem, a rule that uses probability to make predictions based on prior knowledge of conditions that might be related
 
 In this article, I demonstrated the basics of building a text classification model comparing Bag-of-Words (with Tf-Idf) and Word Embedding with Word2Vec. You can further enhance the performance of your model using this code by
-1. using other classification algorithms like Support Vector Machines (SVM), XgBoost, Ensemble models, Neural networks etc.
-2. using Gridsearch to tune the hyperparameters of your model
-3. using advanced word-embedding methods like GloVe and BERT
+- using other classification algorithms like Support Vector Machines (SVM), XgBoost, Ensemble models, Neural networks etc.
+- using Gridsearch to tune the hyperparameters of your model
+- using advanced word-embedding methods like GloVe and BERT
