@@ -31,16 +31,16 @@ The average number of words in a disaster tweet is 15.17 as compared to an avera
 4. Number of characters in a tweet: Disaster tweets are longer than the non-disaster tweets
 The average characters in a disaster tweet is 108.1 as compared to an average of 95.7 characters in a non-disaster tweet
 
-Step 3: Text Pre-Processing
+**Step 3: Text Pre-Processing**
 Before we move to model building, we need to preprocess our dataset by removing punctuations & special characters, cleaning texts, removing stop words, and applying lemmatization
 Simple text cleaning processes: Some of the common text cleaning process involves:
 1. Removing punctuations, special characters, URLs & hashtags
 2. Removing leading, trailing & extra white spaces/tabs
 3. Typos, slangs are corrected, abbreviations are written in their long forms
 
-Stop-word removal: We can remove a list of generic stop words from the English vocabulary using nltk. A few such words are ‘i’,’you’,’a’,’the’,’he’,’which’ etc.
-Stemming: Refers to the process of slicing the end or the beginning of words with the intention of removing affixes(prefix/suffix)
-Lemmatization: It is the process of reducing the word to its base form
+- Stop-word removal: We can remove a list of generic stop words from the English vocabulary using nltk. A few such words are ‘i’,’you’,’a’,’the’,’he’,’which’ etc.
+- Stemming: Refers to the process of slicing the end or the beginning of words with the intention of removing affixes(prefix/suffix)
+- Lemmatization: It is the process of reducing the word to its base form
 
 
 **Step 4: Extracting vectors from text (Vectorization)**
